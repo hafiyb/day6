@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --font-title: 22px;
+    --font-sub-title: 18px;
+    --font-day: 16px;
+
+    --color-pri: #333333;
+    --color-sec: #848484;
+}
+
+html,body{
+    color: var(--color-pri);
+
+}
+
+#app{
+    padding: 1.25em;
+    min-width: 400px;
+}
+
+header{
+    max-width: 650px;
+}
+
+
+
+.inline{
+    display: inline-block;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.just-space{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+header h1, header p{
+    margin: 0 0 10px 0;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    margin: 5px 0;
+}
+
+#temp-holder h2::after{
+    content:'\2109';
+    color: var(--color-sec);
+    font-size: 14px;
+    margin: 5px;
+    vertical-align: top;
+}
+
+span, .gray-text{
+    color: var(--color-sec);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.day-weather{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--color-pri);
+}
+
+.day-weather h4{
+    min-width: 100px;
+}
+
+.deg-holder p::after{
+    content:'\00B0';
+}
+
+@media (min-width:650px) and (max-width:999px) {
+    .deg-holder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .deg-holder p{
+        margin: 0 10px;
+    }
+}
+
+@media (min-width:1000px){
+
+    section{
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .day-weather{
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .deg-holder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .deg-holder p{
+        margin: 0 5px;
+    }
+}

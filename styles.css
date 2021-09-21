@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin Slab;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#app{
+    padding: 1.25em;
+    margin: 0 auto;
+    min-width: 375px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: none;
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.food-list{
+    height: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.food-list img{
+    max-width: 100%;
+}
+
+.food-list > *{
+    margin: 0 0 10px 0;
+}
+
+#nav-buttons{
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#nav-buttons > *{
+    width: 50px;
+    height: 50px;
+    vertical-align: center;
+    line-height: 50px;
+    margin: 50px 0;
+    
+}
+
+#black-bg{
+    background-color: black;
+    color: white;
+}
+
+#food-man{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#food-man img{
+    width: 100%;
+    max-width: 700px;
+}
+
+#food-man > *{
+    margin: 0 0 20px 0;
+}
+
+#food-man h3{
+    font-style: italic;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer div{
+    height: calc(100%/3);
+    margin: 5px;
+}
+
+#footer-mid{
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.footer-mid-half{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer-mid img{
+    margin: 0 20px 0 0;
+    width: 20%;
+    min-width: 50px;
+    max-width: 100px;
+}
+
+#popular-tags{
+    width: 100%;
+}
+
+#popular-tags p{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    margin: 2px;
+    padding: 2px;
+}
+
+hr{
+    width: 80%;
+    border: 1px solid gray;
+    margin: 20px auto;
+}
+
+@media (max-width:500px){
+    .footer-mid-half{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer h1{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:1000px) {
+    #food-list-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: top;
+    }
+
+    header .fas, header #mail{
+        display: none
+    }
+
+    header ul{
+        display: block;
+    }
+
+    .food-list{
+        width: calc(100%/4);
+        padding: 10px;
+        height: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer div{
+        width: calc(100%/3);
+        margin: 5px;
+    }
+}
+
+@media (min-width:1400px) {
+    #app{
+        max-width: 1400px;
+    }
+}

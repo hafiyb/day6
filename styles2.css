@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#app{
+}
+
+h3{
+    font-style: italic;
+    color: gray;
+    margin: 25px 0;
+}
+
+section{
+}
+
+header{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header p{
+    margin: 0 15px;
+}
+
+.hidden{
+    display: none; 
+}
+
+#home{
+    display: inline-block;
+}
+
+#header-img{
+    background-image: url(web_1/images/ny.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: none;
+    
+}
+
+#mobileimg{
+    max-width: 100%;
+
+}
+
+#band-intro{
+    padding: 50px 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#band-info >*{
+    margin: 30px 0;
+}
+
+#band-members{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#band-members > *{
+    margin: 20px;
+}
+
+#tour-dates{
+    padding: 1em;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#tour-months div{
+    text-align: left;
+    width: 100%;
+    line-height: 25px;
+    background-color: white ;
+    color: black;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#tour-months{
+    margin: 20px 0;
+}
+
+.location{
+    background-color: white;
+    max-width: 100%;
+    color: black;
+    text-align: left;
+    margin:  15px 0;
+}
+
+.location img{
+    width: 100%;
+    height: auto;
+}
+
+.buy-button{
+    background-color: black;
+    width: 80%;
+    max-width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.card-text{
+    padding: 10px;
+}
+
+.card-text > *{
+    margin: 0 0 5px 0;
+}
+
+#contact{
+    padding: 50px 1em;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info{
+    text-align: left;
+    margin: 15px 0;
+}
+
+.contact-info >*{
+    display: inline-block;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#sub-forms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#form1, #form2, #form3{
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 5px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+#send-button{
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    align-items: right;
+}
+
+#send{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#mapimg{
+    max-width: 100%;
+    
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer i{
+    margin: 30px 20px;
+    transform: scale(3);
+}
+
+@media (min-width:1000px){
+    #tour-dates{
+        padding: 50px 250px;
+    }
+
+    #band-intro{
+        padding: 50px 250px;
+    }
+
+    #contact{
+        padding: 50px 250px;
+    }
+
+    #band-members{
+        flex-direction: row;
+    }
+
+    #location-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .location{
+        width: calc(100%/3);
+        margin:  30px 5px;
+    }
+
+    #contact-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact-container > div{
+        width: 50%;
+    }
+
+    #sub-forms{
+        flex-direction: row;
+    }
+
+    #info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    }
+
+    .contact-info{
+        margin: 5px 0;
+    }
+
+    .hidden{
+        display: inline-block;
+    }
+
+    .tohide{
+        display: none !important;
+    }
+
+    #mobileimg{
+        display: none;
+    }
+
+    #header-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+}
