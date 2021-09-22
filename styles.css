@@ -134,6 +134,12 @@ footer div{
     padding: 2px;
 }
 
+#firsttag{
+    padding: 2px !important;
+    background-color: black !important;
+    transform: scale(1.1);
+}
+
 hr{
     width: 80%;
     border: 1px solid gray;
